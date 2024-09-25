@@ -1,0 +1,75 @@
+<! DOCTYPE html> <html lang="pt-BR"> <head>
+‹meta charset="UTF-8">
+‹meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+‹title>Contemplando Nossa Aventura</
+title>
+<link rel="stylesheet" href="css/
+style.css">
+</head>
+‹body>
+‹header >
+<h1>Bem-vindo à nossa Aventura!
+</h1>
+</header>
+‹main>
+‹section>
+<h2>Sobre a Aventura</h2>
+<p>Nesta aventura, você
+aprenderá a organizar seu projeto e interagir com os elementos na página.
+Aproveite cada momento e explore todas as funcionalidades.‹/p>
+</section>
+‹section>
+<h2>Imagem de Aventura</h2>
+<img src="images/ imagem_aventura.jpg" alt="Imagem de Aventura" id="aventuraImage">
+</ section>
+para mudar
+‹section>
+<h2>Interação</h2>
+<p>Clique no botão abaixo para mudar a imagem da nossa aventura!</
+p>
+‹button
+id="changeImageBtn">Mudar Imagem</
+button>
+</ section>
+</main>
+< footer>
+‹p›Projeto da 2a Série Ensino
+Médio - 30 Bimestre</p>
+</ footer>
+‹script src="js/script.js"></script>
+</body> </html>
+body {
+font-family: Arial, sans-serif; background-color: #0f0f0; margin: 0; padding: 0;
+}
+header {
+background-color: #4CAF50; color: white;
+text-align: center;
+padding: 20px;
+}
+main {
+padding: 20px; text-align: center;
+}
+h2 {
+}
+color: #333;
+button {yy
+padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #4CAF50;
+color: white; border: none; border-radius: 5px;
+button:hover ‹
+background-color: #45a049;
+}
+img {
+max-width: 100%; height: auto; margin-top: 20px;
+}
+footer {
+text-align: center;
+padding: 20px; background-color: #4CAF50;
+color: white; position: fixed; width: 100%; bottom: 0;
+}
+document.getElementById( 'changeImageBtn'
+) addEventListener('click', function () f
+const image =
+document.getElementById( 'aventuraImage')
+image.src =
+image.src.includes('imagem_aventura.jpg' ) ? 'images/nova_imagem.jpg' : 'images/ imagem_aventura.jpg';
